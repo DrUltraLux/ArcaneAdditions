@@ -1,8 +1,10 @@
 package com.gaiyamato.arcaneadditions;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -21,13 +23,15 @@ public class ArcaneAdditions
     private static Logger logger;
 
     //New Blocks
-    public static Material radiantGearMaterial;
-    public static Block radiantGear;
+    public static ToolMaterial radiantGearMaterial;
+    public static Item radiantGear;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+
+        radiantGearMaterial = EnumHelper.addToolMaterial("Radiant Gear", 0, 1, 1, 1, 0);
     }
 
     @EventHandler
