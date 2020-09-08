@@ -8,6 +8,13 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
     }
 }
+
+repositories {
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+}
         
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
@@ -66,7 +73,9 @@ dependencies {
     //community library dependencies
     compileOnly 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
     compileOnly 'com.aranaira:arcanearchives:0.2.0.23-api'
-    compileOnly 'teamwizardry.wizardry:wizardry:0.11.1'
+    //compileOnly 'teamwizardry.wizardry:wizardry:0.11.1'
+    compileOnly 'wizardry:Wizardry:0.11.1'
+    //need mystical gears maven
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

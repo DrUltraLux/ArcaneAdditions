@@ -22,15 +22,14 @@ public class ArcaneAdditions
     private static Logger logger;
 
     //New Blocks
-    public static ToolMaterial radiantGearMaterial;
-    public static Item radiantGear;
+    //public static GearlMaterial radiantGearMaterial;
+    //public static Gear radiantGear;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
 
-        radiantGearMaterial = EnumHelper.addToolMaterial("Radiant Gear", 0, 1, 1, 1, 0);
     }
 
     @EventHandler
