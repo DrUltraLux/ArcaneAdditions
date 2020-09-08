@@ -18,6 +18,10 @@ public class ArcaneAdditions
 
     private static Logger logger;
 
+    //New Blocks
+    public static Material radiantGearMaterial;
+    public static Block radiantGear;
+
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
