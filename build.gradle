@@ -70,12 +70,16 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
-    //community library dependencies
+    //community library requirements
+    implementation 'arcanearchives:ArcaneArchives:0.2.0.23-mixins8-api'
+    //mystical mechanics
+    implementation 'com.rcx.mystgears:MysticalGears:1.1.5'
+    //implementation 'mystgears:MysticalGears:1.1.5'
+
+    //community library optional depenencies
     implementation 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
-    implementation 'arcanearchives:ArcaneArchives:0.2.0.23'
-    //compileOnly 'teamwizardry.wizardry:wizardry:0.11.1'
-    //compileOnly 'wizardry:Wizardry:1.12.2:0.11.1'
-    //need mystical gears maven
+    implementation 'wizardry:WizardryMod:0.11.1'
+
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
