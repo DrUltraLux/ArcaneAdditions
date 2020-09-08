@@ -74,7 +74,7 @@ dependencies {
     implementation 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
     //compileOnly 'com.aranaira:arcanearchives:0.2.0.23-api'
     //compileOnly 'teamwizardry.wizardry:wizardry:0.11.1'
-    compileOnly 'wizardry:Wizardry:0.11.1'
+    compileOnly 'wizardry:Wizardry:1.12.2:0.11.1'
     //need mystical gears maven
 }
 
