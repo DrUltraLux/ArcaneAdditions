@@ -82,6 +82,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
     compileOnly "thaumcraft:Thaumcraft:1.12.2:6.1.BETA26"
+    compileOnly "com.aranaira.arcanearchives:arcanearchives-0.2.0.23"
 
 }
 
