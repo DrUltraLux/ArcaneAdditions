@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 //import net.minecraftforge.fml.common.event.*;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = ArcaneAdditions.MODID, name = ArcaneAdditions.NAME, version = ArcaneAdditions.VERSION)
+@Mod(modid = ArcaneAdditions.MODID, name = ArcaneAdditions.NAME, version = ArcaneAdditions.VERSION, dependencies = "required-after:thaumcraft")
 public class ArcaneAdditions
 {
     public static final String MODID = "arcaneadditions";
