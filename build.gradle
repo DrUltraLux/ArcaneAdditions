@@ -71,7 +71,7 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
     //community library dependencies
-    compileOnly 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
+    implementation 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
     //compileOnly 'com.aranaira:arcanearchives:0.2.0.23-api'
     //compileOnly 'teamwizardry.wizardry:wizardry:0.11.1'
     //compileOnly 'wizardry:Wizardry:0.11.1'
