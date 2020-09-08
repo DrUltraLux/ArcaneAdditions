@@ -17,40 +17,4 @@ public class ArcaneAdditions
     public static final String VERSION = "GRADLE:VERSION";
 
     private static Logger logger;
-    @SidedProxy(clientSide = "com.gaiyamato.arcaneadditions.proxy.ClientProxy", serverSide = "com.gaiyamato.arcaneadditions.proxy.CommonProxy")
-	public static CommonProxy proxy;
-
-    @EventHandler
-	public static void preInit (FMLPreInitializationEvent event) {
-		proxy.preInit(event);
-	}
-
-	@EventHandler
-	public static void init (FMLInitializationEvent event) {
-		proxy.init(event);
-	}
-
-	@EventHandler
-	public static void postInit (FMLPostInitializationEvent event) {
-		proxy.postInit(event);
-	}
-
-	@EventHandler
-	public static void serverStarting (FMLServerStartingEvent event) {
-		proxy.serverStarting(event);
-	}
-
-	@EventHandler
-	public static void serverStarted (FMLServerStartedEvent event) {
-		proxy.serverStarted(event);
-	}
-
-	@EventHandler
-	public static void loadComplete (FMLLoadCompleteEvent event) {
-		proxy.loadComplete(event);
-	}
-
-	public static ResourceLocation location (String string) {
-		return new ResourceLocation(MODID, string);
-	}
 }
