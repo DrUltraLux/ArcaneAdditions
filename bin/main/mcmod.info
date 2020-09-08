@@ -11,7 +11,7 @@
   "credits": "",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": [ArcaneArchives, MysticalMechanics, MysticalGears, Thaumcraft, Wizardry]
-  "requiredMods": [ArcaneArchives, MysticalMechanics, MysticalGears]
+  "dependencies": [ZeroCore, ArcaneArchives, MysticalMechanics, MysticalGears, Thaumcraft, Wizardry]
+  "requiredMods": [ZeroCore, ArcaneArchives, MysticalMechanics, MysticalGears]
 }
 ]
