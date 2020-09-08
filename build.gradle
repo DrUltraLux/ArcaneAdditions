@@ -64,8 +64,8 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
     //community library dependencies
-    compileOnly "thaumcraft:Thaumcraft:1.12.2:6.1.BETA26"
-    compileOnly "com.aranaira:arcanearchives:0.2.0.23-api"
+    compileOnly 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
+    compileOnly 'com.aranaira:arcanearchives:0.2.0.23-api'
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
