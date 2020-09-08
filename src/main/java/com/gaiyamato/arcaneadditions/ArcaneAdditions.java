@@ -23,7 +23,6 @@ public class ArcaneAdditions
     @EventHandler
 	public static void preInit (FMLPreInitializationEvent event) {
 		proxy.preInit(event);
-		configDirectory = event.getModConfigurationDirectory();
 	}
 
 	@EventHandler
