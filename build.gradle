@@ -3,9 +3,11 @@ buildscript {
         maven { url = 'https://files.minecraftforge.net/maven' }
         jcenter()
         mavenCentral()
+        maven { url = "https://plugins.gradle.org/m2/" }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
+        classpath 'com.wynprice.cursemaven:CurseMaven:2.+'
     }
 }
 
@@ -21,6 +23,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'java'
+apply plugin: 'com.wynprice.cursemaven'
 
 version = '1.0'
 group = 'com.gaiyamato.arcaneadditions' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -65,20 +68,17 @@ minecraft {
 }
 
 dependencies {
-    // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
-    // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
-    // The userdev artifact is a special name and will get all sorts of transformations applied to it.
+    //MC forge version
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
     //community library requirements
-    implementation 'arcanearchives:ArcaneArchives:0.2.0.23-mixins8-api'
-    //mystical mechanics
-    implementation 'com.rcx.mystgears:MysticalGears:1.1.5'
-    //implementation 'mystgears:MysticalGears:1.1.5'
+    //implementation 'arcanearchives:ArcaneArchives:0.2.0.23-mixins8-api'
+    //implementation 'mysticalmechanics:MysticalMechanics:0.18'
+    //implementation 'mysticalgears:MysticalGears:1.1.5'
 
     //community library optional depenencies
     implementation 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
-    implementation 'wizardry:WizardryMod:0.11.1'
+    //implementation 'wizardry:WizardryMod:0.11.1'
 
 }
 
