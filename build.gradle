@@ -72,17 +72,17 @@ dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
 
     //community library requirements
-    //implementation 'arcanearchives:ArcaneArchives:0.2.0.23-mixins8-api'
+    //implementation 'arcane-archives:arcanearchives:0.2.0.23:mixins8-api'
     implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/arcane-archives/files/3048638")
-    //implementation 'mysticalmechanics:MysticalMechanics:0.18'
+    //implementation 'mysticalmechanics:Mystical Mechanics:0.18'
     implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/mysticalmechanics/files/3006392")
     implementation 'mystical-gears:mystgears:1.1.5'
     //implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/mystical-gears/files/3020021")
 
     //community library optional depenencies
     implementation 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
-    //implementation 'wizardry:WizardryMod:0.11.1'
-    implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/wizardry-mod/files/3045584")
+    implementation 'wizardry-mod:wizardry:0.11.1'
+    //implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/wizardry-mod/files/3045584")
 
 }
 
