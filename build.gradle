@@ -7,7 +7,7 @@ buildscript {
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:3.+'
-        classpath 'com.wynprice.cursemaven:CurseMaven:2.+'
+        classpath 'com.wynprice.cursemaven:CurseMaven:1.+'
     }
 }
 
@@ -73,12 +73,16 @@ dependencies {
 
     //community library requirements
     //implementation 'arcanearchives:ArcaneArchives:0.2.0.23-mixins8-api'
+    implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/arcane-archives/files/3048638")
     //implementation 'mysticalmechanics:MysticalMechanics:0.18'
-    //implementation 'mysticalgears:MysticalGears:1.1.5'
+    implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/mysticalmechanics/files/3006392")
+    implementation 'mystical-gears:mystgears:1.1.5'
+    //implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/mystical-gears/files/3020021")
 
     //community library optional depenencies
     implementation 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
     //implementation 'wizardry:WizardryMod:0.11.1'
+    implementation curse.resolveUrl("https://www.curseforge.com/minecraft/mc-mods/wizardry-mod/files/3045584")
 
 }
 
